@@ -11,6 +11,8 @@ terraform {
   }
 
   backend "s3" {
+    key    = "estado/terraformSQS.tfstate"
+    region = var.region
   }
 
 }
